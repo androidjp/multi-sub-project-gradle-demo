@@ -35,3 +35,16 @@ dependencies {
 
 // Define the main class for the application
 mainClassName = 'greeter.App'
+
+
+distZip {
+    from project(':docs').asciidoctor, {
+        into "${project.name}-${version}"
+    }
+}
+
+distTar {
+    from project(':docs').asciidoctor, {
+        into "${project.name}-${version}"
+    }    
+}

@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/docs" />
+            <option value="$PROJECT_DIR$/exception-handling-lib" />
             <option value="$PROJECT_DIR$/greeter-java-app" />
             <option value="$PROJECT_DIR$/greeting-lib" />
           </set>

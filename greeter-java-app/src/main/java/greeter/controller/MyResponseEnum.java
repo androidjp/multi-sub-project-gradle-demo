@@ -1,8 +1,7 @@
 package greeter.controller;
 
-import greeter.exception.assertion.BusinessExceptionAssert;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+
+import exception.handling.lib.exception.assertion.BusinessExceptionAssert;
 
 public enum MyResponseEnum implements BusinessExceptionAssert {
     /**

@@ -30,7 +30,8 @@ dependencies {
 
     implementation 'org.codehaus.groovy:groovy-all:2.5.6'
     implementation project(':greeting-lib')
-
+    implementation project(':exception-handling-lib')
+    
     implementation 'org.springframework.boot:spring-boot-starter-web'
     
     // lombok

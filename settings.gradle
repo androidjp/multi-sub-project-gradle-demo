@@ -9,4 +9,4 @@
 
 rootProject.name = 'multi-sub-project-demo'
 
-include 'greeting-lib','greeter-java-app', 'docs'
+include 'greeting-lib','greeter-java-app', 'docs', 'exception-handling-lib'

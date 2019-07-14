@@ -3,9 +3,14 @@
  */
 package greeter;
 
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class App {
 
     public static void main(String[] args) {
+        SpringApplication.run(App.class, args);
         final String output = GreetingFormatter.greeting(args[0]);
         System.out.println(output);
     }

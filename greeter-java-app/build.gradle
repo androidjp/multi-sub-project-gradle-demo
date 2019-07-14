@@ -5,7 +5,6 @@
  * For more details take a look at the Java Quickstart chapter in the Gradle
  * User Manual available at https://docs.gradle.org/5.4.1/userguide/tutorial_java_projects.html
  */
-
 plugins {
     // Apply the java plugin to add support for Java
     id 'java'
@@ -14,7 +13,10 @@ plugins {
     id 'application'
 
 //    id 'groovy'
+    id 'org.springframework.boot' version '2.1.6.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.7.RELEASE'
 }
+
 
 repositories {
     // Use jcenter for resolving your dependencies.
@@ -29,6 +31,12 @@ dependencies {
     implementation 'org.codehaus.groovy:groovy-all:2.5.6'
     implementation project(':greeting-lib')
 
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    
+    // lombok
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+    
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
 }
@@ -46,5 +54,5 @@ distZip {
 distTar {
     from project(':docs').asciidoctor, {
         into "${project.name}-${version}"
-    }    
+    }
 }

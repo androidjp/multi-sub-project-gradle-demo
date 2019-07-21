@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/exception-handling-lib" />
             <option value="$PROJECT_DIR$/greeter-java-app" />
             <option value="$PROJECT_DIR$/greeting-lib" />
+            <option value="$PROJECT_DIR$/webflux-server" />
           </set>
         </option>
         <option name="useQualifiedModuleNames" value="true" />
